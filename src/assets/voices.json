@@ -8,5 +8,10 @@
         "id": 2,
         "file": "voices/yilmaz2.mp3",
         "description": "Sen bu yaşına kadar derelerde Tarzan gibi yüzdün ama başın dikti. Al şimdi ruh haline göre giyersin şortunu"
+    },
+    {
+        "id": 3,
+        "file": "voices/yilmaz3.mp3",
+        "description": "Kimsenin hiçbir şey bilmediği yerde bir insan her şeyi bilebilir, bu kadar yani"
     }
 ]
