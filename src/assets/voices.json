@@ -43,5 +43,20 @@
         "id": 9,
         "file": "voices/yilmaz9.mp3",
         "description": "İlkkan sadece 10 liramın olması sıfır liramın olmasından daha çok canımı yakıyor, anladın mı? Beni bu 10 liradan kurtar ya, kurban olayım. Al şunu. Kurtar beni şu 10 liradan ya"
+    },
+    {
+        "id": 10,
+        "file": "voices/yilmaz10.mp3",
+        "description": "İlkkan yani seni hiç dinlemedim ama yani bence haksızsın ya, ağzından çıkan her şey çok kötü ya"
+    },
+    {
+        "id": 11,
+        "file": "voices/yilmaz11.mp3",
+        "description": "Hiç hesapta olmayan bir kölelik durumu çıktı, bunun köleliğiyle uğraştık yani"
+    },
+    {
+        "id": 12,
+        "file": "voices/yilmaz12.mp3",
+        "description": "Hatırlarsın yani, bu kazadan evvel sen yürüyordun işte bilirsin yani. Evet, yani keşke olsa. Olsa çok iyi, keşke yürüsen evet ama hani işte, al bak İlkkan abin yürüyor. Ne yaptı hani yürüye yürüye gitti köle oldu"
     }
 ]
