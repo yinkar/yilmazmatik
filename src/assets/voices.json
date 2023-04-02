@@ -28,5 +28,15 @@
         "id": 6,
         "file": "voices/yilmaz6.mp3",
         "description": "Ben senin gözlerinin içine bakıyorum ve göt deliğini görüyorum kardeşim, o kadar şeffafsın sen bana"
+    },
+    {
+        "id": 7,
+        "file": "voices/yilmaz7.mp3",
+        "description": "Amcacığım zaten tanıyınca, o normal misafir oluyor. Bu tanrı misafiri zaten bu konsept yani tanımıyor olunca..."
+    },
+    {
+        "id": 8,
+        "file": "voices/yilmaz8.mp3",
+        "description": "İlkkan onu bunu boş ver de sen, şu alette kaç yaparsın"
     }
 ]
