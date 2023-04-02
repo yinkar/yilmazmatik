@@ -38,5 +38,10 @@
         "id": 8,
         "file": "voices/yilmaz8.mp3",
         "description": "İlkkan onu bunu boş ver de sen, şu alette kaç yaparsın"
+    },
+    {
+        "id": 9,
+        "file": "voices/yilmaz9.mp3",
+        "description": "İlkkan sadece 10 liramın olması sıfır liramın olmasından daha çok canımı yakıyor, anladın mı? Beni bu 10 liradan kurtar ya, kurban olayım. Al şunu. Kurtar beni şu 10 liradan ya"
     }
 ]
