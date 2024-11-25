@@ -2,61 +2,73 @@
     {
         "id": 1,
         "file": "voices/yilmaz1.mp3",
-        "description": "Sen kaburge yiyecek durumunun olmayışını Onur'un şahsında yalıtılmış sessiz bir öfkeye dönüştürüp bu iltihabı da sesinin tonlarında bize yansıtıyorsun kardeşim şu anda, yapma bunu"
+        "description": "Sen kaburge yiyecek durumunun olmayışını Onur'un şahsında yalıtılmış sessiz bir öfkeye dönüştürüp bu iltihabı da sesinin tonlarında bize yansıtıyorsun kardeşim şu anda, yapma bunu",
+        "family_friendly": true
     },
     {
         "id": 2,
         "file": "voices/yilmaz2.mp3",
-        "description": "Sen bu yaşına kadar derelerde Tarzan gibi yüzdün ama başın dikti. Al şimdi ruh haline göre giyersin şortunu"
+        "description": "Sen bu yaşına kadar derelerde Tarzan gibi yüzdün ama başın dikti. Al şimdi ruh haline göre giyersin şortunu",
+        "family_friendly": true
     },
     {
         "id": 3,
         "file": "voices/yilmaz3.mp3",
-        "description": "Kimsenin hiçbir şey bilmediği yerde bir insan her şeyi bilebilir, bu kadar yani"
+        "description": "Kimsenin hiçbir şey bilmediği yerde bir insan her şeyi bilebilir, bu kadar yani",
+        "family_friendly": true
     },
     {
         "id": 4,
         "file": "voices/yilmaz4.mp3",
-        "description": "Kardeşim ben senin yılgın bir hoşgörüyle beni benimsemene mi kaldım"
+        "description": "Kardeşim ben senin yılgın bir hoşgörüyle beni benimsemene mi kaldım",
+        "family_friendly": true
     },
     {
         "id": 5,
         "file": "voices/yilmaz5.mp3",
-        "description": "Allah'ın dinlenme tesisinde bu ne sembolizm ya böyle"
+        "description": "Allah'ın dinlenme tesisinde bu ne sembolizm ya böyle",
+        "family_friendly": true
     },
     {
         "id": 6,
         "file": "voices/yilmaz6.mp3",
-        "description": "Ben senin gözlerinin içine bakıyorum ve göt deliğini görüyorum kardeşim, o kadar şeffafsın sen bana"
+        "description": "Ben senin gözlerinin içine bakıyorum ve göt deliğini görüyorum kardeşim, o kadar şeffafsın sen bana",
+        "family_friendly": false
     },
     {
         "id": 7,
         "file": "voices/yilmaz7.mp3",
-        "description": "Amcacığım zaten tanıyınca, o normal misafir oluyor. Bu tanrı misafiri zaten bu konsept yani tanımıyor olunca..."
+        "description": "Amcacığım zaten tanıyınca, o normal misafir oluyor. Bu tanrı misafiri zaten bu konsept yani tanımıyor olunca...",
+        "family_friendly": true
     },
     {
         "id": 8,
         "file": "voices/yilmaz8.mp3",
-        "description": "İlkkan onu bunu boş ver de sen, şu alette kaç yaparsın"
+        "description": "İlkkan onu bunu boş ver de sen, şu alette kaç yaparsın",
+        "family_friendly": true
     },
     {
         "id": 9,
         "file": "voices/yilmaz9.mp3",
-        "description": "İlkkan sadece 10 liramın olması sıfır liramın olmasından daha çok canımı yakıyor, anladın mı? Beni bu 10 liradan kurtar ya, kurban olayım. Al şunu. Kurtar beni şu 10 liradan ya"
+        "description": "İlkkan sadece 10 liramın olması sıfır liramın olmasından daha çok canımı yakıyor, anladın mı? Beni bu 10 liradan kurtar ya, kurban olayım. Al şunu. Kurtar beni şu 10 liradan ya",
+        "family_friendly": true
     },
     {
         "id": 10,
         "file": "voices/yilmaz10.mp3",
-        "description": "İlkkan yani seni hiç dinlemedim ama yani bence haksızsın ya, ağzından çıkan her şey çok kötü ya"
+        "description": "İlkkan yani seni hiç dinlemedim ama yani bence haksızsın ya, ağzından çıkan her şey çok kötü ya",
+        "family_friendly": true
     },
     {
         "id": 11,
         "file": "voices/yilmaz11.mp3",
-        "description": "Hiç hesapta olmayan bir kölelik durumu çıktı, bunun köleliğiyle uğraştık yani"
+        "description": "Hiç hesapta olmayan bir kölelik durumu çıktı, bunun köleliğiyle uğraştık yani",
+        "family_friendly": true
     },
     {
         "id": 12,
         "file": "voices/yilmaz12.mp3",
-        "description": "Hatırlarsın yani, bu kazadan evvel sen yürüyordun işte bilirsin yani. Evet, yani keşke olsa. Olsa çok iyi, keşke yürüsen evet ama hani işte, al bak İlkkan abin yürüyor. Ne yaptı hani yürüye yürüye gitti köle oldu"
+        "description": "Hatırlarsın yani, bu kazadan evvel sen yürüyordun işte bilirsin yani. Evet, yani keşke olsa. Olsa çok iyi, keşke yürüsen evet ama hani işte, al bak İlkkan abin yürüyor. Ne yaptı hani yürüye yürüye gitti köle oldu",
+        "family_friendly": true
     }
 ]

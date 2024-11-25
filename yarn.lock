@@ -1029,6 +1029,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.17.14.tgz#e81fb49de05fed91bf74251c9ca0343f4fc77d31"
   integrity sha512-gPQmsi2DKTaEgG14hc3CHXHp62k8g6qr0Pas+I4lUxRMugGSATh/Bi8Dgusoz9IQ0IfdrvLpco6kujEIBoaogA==
 
+"@fontsource/quicksand@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-5.1.0.tgz#5a146d381c28cde21a0a6567c4c88883c7ddeca0"
+  integrity sha512-TLi2qjOY3bdqK5e19TxUdCbfD+wHiITzM0RgnXXNcS2sJzd1rSXHFFW7pdD51wCVnO/2CaQXHUT2F4n05iclBg==
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz#e5d2e450306a9491e3bd77e323e38d7aff315996"
@@ -1283,6 +1288,11 @@
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.47.tgz#e597ef75086c6e896ff5478a6bfc0a7aa4bbd14c"
   integrity sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==
+
+"@vueform/toggle@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vueform/toggle/-/toggle-2.1.4.tgz#a78fd0aa4cf9b47e71e5de9d3c8880285cb64123"
+  integrity sha512-tEITFf5wlqIWoCYZXJdoXvCnrc97weOu2csR/BEoROVvFu1zRsoK0wY1pJG7BR+g5zpGJneGSdLhMUsbx8y1yw==
 
 acorn@^8.5.0:
   version "8.8.2"

@@ -1,6 +1,9 @@
 <script setup>
-import { onMounted, ref } from 'vue';
-import voices from '../assets/voices.json';
+import { onMounted, ref, watchEffect } from 'vue';
+import voiceList from '../assets/voices.json';
+import '@fontsource/quicksand';
+import Toggle from '@vueform/toggle';
+import '@vueform/toggle/themes/default.css';
 
 // Element references
 const yilmaz = ref(null);
@@ -11,8 +14,20 @@ const audioSource = ref(null);
 const isLoading = ref(false);
 const isTalking = ref(false);
 const isBegin = ref(true);
-const voiceFiles = ref([]);
+const voices = ref([]);
 const randomStack = ref(new Set([]));
+const selectedItem = ref(null);
+const subtitleText = ref('');
+const familyFriendly = ref(true);
+
+const toggleFamilyFriendly = () => {
+  voices.value = familyFriendly.value ? voiceList.filter(v => v.family_friendly) : voiceList;
+  randomStack.value.clear();
+};
+
+watchEffect(() => {
+  toggleFamilyFriendly();
+});
 
 // Say an idiom method
 function idiom() {
@@ -30,21 +45,19 @@ function idiom() {
     return Math.floor(Math.random() * max);
   }
 
-  let randomIndex;
-
   // Get random voice but prevent same one after another by using a stack
   do {
-    randomIndex = random(voiceFiles.value.length);
-  } while (randomStack.value.has(randomIndex));
+    selectedItem.value = random(voices.value.length);
+  } while (randomStack.value.has(selectedItem.value));
 
-  randomStack.value.add(randomIndex);
+  randomStack.value.add(selectedItem.value);
 
   // Clear random stack when stack size reached number of voice files
-  if (randomStack.value.size >= voiceFiles.value.length) {
+  if (randomStack.value.size >= voices.value.length) {
     randomStack.value.clear();
   }
   
-  audioSource.value.src = voiceFiles.value[randomIndex];
+  audioSource.value.src = `/yilmazmatik/${voices.value[selectedItem.value].file}`;
 
   player.value.load();
   player.value.play();
@@ -55,19 +68,22 @@ function talk() {
   isTalking.value = true;
   isLoading.value = false;
   isBegin.value = false;
+
+  subtitleText.value = voices.value[selectedItem.value].description;
 }
 
 // Stop to talk method
 function silence() {
   isTalking.value = false;
   isLoading.value = false;
+
+  subtitleText.value = '';
 }
 
 onMounted(() => {
-  // Set voice files to array
-  voices.forEach(v => {
-    voiceFiles.value.push(`/yilmazmatik/${v.file}`);
-  });
+  voices.value = [...voiceList];
+
+  toggleFamilyFriendly();
 
   // Assign keyboard keys to say an idiom
   window.addEventListener('keydown', idiom)
@@ -75,6 +91,14 @@ onMounted(() => {
 </script>
 
 <template>
+  <div class="panel">
+    <Toggle
+      v-model="familyFriendly"
+      on-label="Aile Dostu"
+      off-label="Gelişine"
+    ></Toggle>
+  </div>
+
   <button
     @click="idiom()"
     class="yilmaz"
@@ -91,9 +115,22 @@ onMounted(() => {
   <audio id="player" ref="player" @ended="silence" @pause="silence" @playing="talk" v-show="false" preload="auto">
     <source id="audio-source" ref="audioSource" src="" type="audio/mp3" />
   </audio>
+
+  <div class="subtitle">{{ subtitleText }}</div>
 </template>
 
 <style scoped>
+  .panel {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    --toggle-width: 100px;
+  }
+
   .yilmaz {
     border: none;
     background: none;
@@ -102,6 +139,20 @@ onMounted(() => {
     margin: 0;
     transform-origin: bottom center;
     outline: none;
+  }
+
+  .subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: #0099e6;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: calc(100%/2 + 253px/2);
+    margin-top: 20px;
+    left: calc(100%/2 - 300px/2);
+    opacity: 0.5;
+    animation: subtitle-shake 200ms linear infinite;
   }
 
   .yilmaz > img {
@@ -187,6 +238,15 @@ onMounted(() => {
     }
     100% {
       transform: translate(0, 0) rotate(0);
+    }
+  }
+
+  @keyframes subtitle-shake {
+    0% {
+      transform: rotate(0);
+    }
+    80% {
+      transform: rotate(-1deg);
     }
   }
 </style>
